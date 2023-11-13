@@ -1,0 +1,198 @@
+.drivers {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.drivers-container {
+  flex: 1;
+  max-width: 20vw;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* To establish a containing context for fixed elements */
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+}
+
+.drivers-container::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.user-details {
+  flex: 1;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.user-list {
+}
+.section-title {
+  position: sticky;
+  top: 0;
+  font-weight: bold;
+  padding: 0px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+}
+
+.section-title span {
+  font-size: 13px;
+}
+
+/* Style for the dropdown button */
+.dropdown-btn {
+  background: none;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  color: black;
+}
+.dropdown-btn:focus {
+  outline: none;
+}
+
+/* Style for the dropdown content (initially hidden) */
+.dropdown .user-list {
+  max-height: 245px;
+  overflow-y: auto;
+}
+
+.dropdown .user-list::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* Display the user list when the dropdown button is clicked */
+.dropdown.show .user-list {
+  display: block;
+}
+
+/* Style the dropdown when it's open (you can customize this further) */
+.show .dropdown-btn {
+  transform: rotate(180deg);
+}
+
+.favorites {
+  max-height: 245px;
+  margin-top: 35px;
+  overflow-y: auto;
+}
+
+.favorites::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.trucks {
+  max-height: 270px;
+  margin-top: 5px;
+  overflow-y: auto;
+}
+
+.trucks::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.vans {
+  max-height: 300px;
+  margin-top: 5px;
+  overflow-y: auto;
+}
+
+.vans::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0px 7px;
+  /* border-bottom: 1px solid #f7f4f4; */
+  padding: 2px 5px;
+}
+
+.selected-driver {
+  background-color: #f2f4f9;
+  /* margin: 0px 12px; */
+  border-radius: 5px;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.user-name {
+  font-weight: bold;
+  margin: 0px;
+  font-size: 13px;
+}
+
+.user-car-bottom {
+  margin-top: 5px;
+}
+
+.user-icon-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.search-bar {
+  position: fixed;
+  top: 0;
+  width: 19vw;
+  border-bottom: 1px solid #ccc;
+  background-color: white;
+  color: black;
+  padding: 5px 6px;
+  z-index: 1;
+  border-right: 1px solid #ccc;
+}
+
+.search-bar-input {
+  padding-left: 15px;
+  width: 17vw;
+  color: black;
+  background-color: white;
+  border: none;
+}
+
+.add-new-vehicle {
+  position: fixed;
+  bottom: 0;
+  width: 20vw;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 7px 0;
+  z-index: 1;
+  border-top: 1px solid #ccc;
+}
+
+.add-btn {
+  padding: 0.3em 1em;
+}
+
+.user-details {
+  padding: 20px;
+}

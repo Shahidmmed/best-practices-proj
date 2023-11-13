@@ -1,0 +1,25 @@
+.vehicle-card {
+  padding: 15px;
+  background-color: #f3f5f9;
+  border-radius: 5px;
+  color: black;
+}
+
+.vehicle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vehicle-details {
+  padding: 20px;
+  width: 300px;
+}
+
+.flex-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vehicle-img {
+  width: 365px;
+}

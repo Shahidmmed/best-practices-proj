@@ -1,0 +1,60 @@
+.layout {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.page {
+  margin-left: 5%;
+}
+
+.side-nav-bar {
+  width: 5%;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.top-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icon {
+  font-size: 0px;
+  color: #fff;
+  margin: 6px;
+  cursor: pointer;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  margin: 16px 0;
+}
+
+.bottom-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-top: auto; /* Push the profile picture to the bottom */
+  margin-bottom: 20px;
+  /* Add profile picture styling (e.g., background image) here */
+}

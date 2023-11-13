@@ -1,0 +1,70 @@
+.details-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70vw;
+}
+.user-nav {
+  display: flex;
+}
+.user-id {
+  margin: 0px;
+}
+.nav-icons {
+  display: flex;
+}
+
+.stats-section {
+  display: flex;
+}
+.routes,
+.driver-stats {
+  flex: 1;
+}
+
+.info-container {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-row {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 0px 20px; /* Adjust the padding as needed */
+  border-right: 1px solid #ccc; /* Add dividers between info-rows */
+}
+
+/* Remove the border from the last info-row */
+.info-row:last-child {
+  border-right: none;
+}
+
+.package {
+  margin-bottom: 0px;
+}
+
+.map {
+  margin-top: 10px;
+}
+
+.parameter {
+  font-size: 12px; /* Small text for parameters */
+  font-weight: normal;
+  margin: 0px;
+  color: #555; /* Adjust the color as needed */
+}
+
+.value {
+  font-size: 16px; /* Larger text for values */
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+small {
+  color: gray;
+}
